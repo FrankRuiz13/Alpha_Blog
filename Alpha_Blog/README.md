@@ -1,4 +1,4 @@
-##First Ruby on Rails App
+## First Ruby on Rails App
 
 #### This is the first Ruby on Rails app i have coded. 
 

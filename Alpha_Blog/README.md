@@ -1,24 +1,5 @@
-# README
+##First Ruby on Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### This is the first Ruby on Rails app i have coded. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I am currently taking the Complete Ruby on Rails Developer Course on Udemy

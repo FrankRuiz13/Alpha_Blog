@@ -1,0 +1,83 @@
+@import "foundation_and_overrides";
+
+$foundation-5-top-bar-bg: #333;
+$foundation-5-top-bar-text-color: $white;
+
+body {
+  filter: sepia(20%);
+}
+
+.foundation-5-top-bar {
+  background: $foundation-5-top-bar-bg;
+  color: $foundation-5-top-bar-text-color;
+  box-shadow: inset 2px 2px 7px 7px rgba( 0, 0, 0, 0.5);
+
+  .menu {
+    background: $foundation-5-top-bar-bg;
+
+    a {
+      color: $foundation-5-top-bar-text-color;
+    }
+  }
+
+  .is-dropdown-submenu {
+    border: 0;
+  }
+
+  .is-dropdown-submenu-item.opens-right a::after {
+    border-color: transparent transparent transparent $foundation-5-top-bar-text-color;
+  }
+
+  .js-drilldown-back > a::before {
+    border-color: transparent $foundation-5-top-bar-text-color transparent transparent;
+  }
+
+  .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent $foundation-5-top-bar-text-color;
+  }
+
+  .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+    border-color: $foundation-5-top-bar-text-color transparent transparent;
+  }
+}
+
+.top-bar-title {
+  color: whitesmoke;
+  font-size: 1.3em; 
+  font-style: italic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.top-bar-title:hover {
+  color: whitesmoke;
+}
+
+
+$hero-height: 90vh;
+
+.hero-section {
+  background: asset-url('blog.jpg') 50% no-repeat;
+  background-size: cover;
+  background-position: left 15% bottom 15%;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text h1 {
+    color: rgba( 0, 0, 0, 0.5);
+    font-size: 5rem;
+    text-shadow: 1px 1px 2px $black;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+}
+
+
+
+
+
+

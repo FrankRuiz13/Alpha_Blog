@@ -7,20 +7,26 @@
 </ul>
 <% end %>
 
-<%= form_for @article do |f| %>
-  <p>
-    <%= f.label :title %></br>
-    <%= f.text_field :title %>
- </p>
- <p>
-     <%= f.label :description %></br>
-      <%= f.text_area :description %>
-  </p>
-  <p>
+
+<div class="row">
+  <div class="small-12 column">
+      <%= form_for(@article, :html => {class: "callout text-center", role: "form"}) do |f| %>
+        <div class="floated-label-wrapper">
+          <%= f.text_field :title, placeholder: "Title of article" %>  
+        </div>
+         <div class="floated-label-wrapper">
+          <%= f.text_area :description, rows: 10, placeholder: "Description" %>
+         </div> 
+  
   <%= f.submit %>
-  </p>
+
 
 
 <% end %>
+    <div class="small-8 column">
+    <%= link_to 'Back to article listing', articles_path %>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Back to article listing', articles_path %>
+

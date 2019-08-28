@@ -12,16 +12,18 @@
   <div class="small-12 columns">
       <%= form_for(@article, :html => {class: "callout text-center", role: "form"}) do |f| %>
         <div class="floated-label-wrapper">
+          <%= f.label :title %>
           <%= f.text_field :title, placeholder: "Title of article" %>  
         </div>
          <div class="floated-label-wrapper">
+          <%= f.label :description %>
           <%= f.text_area :description, rows: 10, placeholder: "Description" %>
          </div> 
           <div class="small-12 columns">
             <%= f.submit class: "button" %>
           </div>
     <% end %>
-      <div class="small-8 columns">
+      <div class="small-12 columns">
       [ <%= link_to "Cancel request and return to articles listing", articles_path %> ]
       </div>
   </div>

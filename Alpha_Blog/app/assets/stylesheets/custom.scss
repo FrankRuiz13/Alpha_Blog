@@ -3,7 +3,11 @@
 $foundation-5-top-bar-bg: #333;
 $foundation-5-top-bar-text-color: $white;
 
-
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
 .foundation-5-top-bar {
   background: $foundation-5-top-bar-bg;
   color: $foundation-5-top-bar-text-color;
@@ -66,10 +70,12 @@ $hero-height: 90vh;
 
   .hero-section-text h1 {
     color: black;
+    margin-top: 20vh;
+    padding: 1rem;
+    font-family: inherit;
     font-size: 5rem;
     text-shadow: 12px 12px 20px $black;
     text-transform: uppercase;
-    letter-spacing: -1px;
   }
 }
 
@@ -125,7 +131,11 @@ $button-rounded-hover-border: 5px solid darken($primary-color, 10%);
   opacity: 0.25;
 }
 
-
+.footer-container {
+  background: #333;
+  text-align: center;
+  color: white;
+}
 
 
 

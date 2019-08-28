@@ -8,6 +8,9 @@ $foundation-5-top-bar-text-color: $white;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
 }
+
+/*----------navbar---------*/
+
 .foundation-5-top-bar {
   background: $foundation-5-top-bar-bg;
   color: $foundation-5-top-bar-text-color;
@@ -56,6 +59,12 @@ $foundation-5-top-bar-text-color: $white;
 }
 
 
+.container {
+  margin: 100px;
+}
+
+/*-------------hero-------------*/
+
 $hero-height: 90vh;
 
 .hero-section {
@@ -78,9 +87,10 @@ $hero-height: 90vh;
     text-transform: uppercase;
   }
 }
+/*---------------signup button---------------*/
 
 $button-rounded-hover-radius: 5000px;
-$button-rounded-hover-border: 5px solid darken($primary-color, 10%);
+$button-rounded-hover-border: 5px solid black;
 
 .button-rounded-hover {
   border: 0;
@@ -131,6 +141,18 @@ $button-rounded-hover-border: 5px solid darken($primary-color, 10%);
   opacity: 0.25;
 }
 
+/*-----------------General buttons----------------*/
+
+.button {
+  background: firebrick;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  background: #333
+}
+
+
 .floated-label-wrapper {
   position: relative;
 
@@ -164,10 +186,7 @@ $button-rounded-hover-border: 5px solid darken($primary-color, 10%);
   }
 }
 
-
-
-
-
+/*footer*/
 
 .footer-container {
   background: #333;

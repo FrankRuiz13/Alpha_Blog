@@ -1,13 +1,23 @@
-<h1>Showing selected article</h1>
-
-<p>
-  Title: <%= @article.title %>
-</p>
-
-<p>
-  Descriptiion: <%= @article.description %>
-</p>
-
-
-<%= link_to 'Edit this article', edit_article_path(@article) %> |
-<%= link_to 'Back to article listing', articles_path %>
+<h2 align="center" style="font-family: Oswald"> Title:  <%= @article.title %></h2>
+<div class="row">
+  <div class="small-12 columns">
+    
+    <div class="blockquote-continer">
+      <div class="callout">
+        <h4 class="blockquote-title" align="center" style="font-family: Oswald">Description:</h4>
+        <blockquote>
+        
+           <%=  simple_format( @article.description)  %>
+    
+        </blockquote>
+      </div>
+    </div>
+    <div class="article-actions">
+    <hr>
+    <%= link_to 'Edit this article', edit_article_path(@article) %> |
+    <%= link_to "Delete this article", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete the article?"} %> |
+    <%= link_to 'View all articles', articles_path %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,11 @@
- <% flash.each do |name,msg| %>
-    <ul>
-      <li><%= msg %></li>
-    </ul>
- <% end %>
+ <div class="row">
+  <div class="small-8 columns">
+    <% flash.each do |name,msg| %>
+      <div class="alert-box callout success">
+        <ul>
+          <li><%= msg %></li>
+        </ul>
+      <% end %>
+      </div>
+    </div>
+  </div>

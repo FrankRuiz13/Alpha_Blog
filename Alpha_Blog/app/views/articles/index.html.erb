@@ -1,3 +1,9 @@
 <h1 align="center" style="font-family: Oswald">Listing all articles</h1>
- 
-<%= render 'article', obj:@articles %>
+   <div class="pagination" align="center">
+      <%= will_paginate %>
+    </div>
+  <%= render 'article', obj:@articles %><div align="center">
+  <div class ="pagination" align="center">
+  <%= will_paginate %>
+  </div>
+

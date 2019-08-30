@@ -1,0 +1,18 @@
+<h1 style="font-family: Oswald">Create new category</h1>
+
+<div class="row">
+  <div class="large-11 columns">
+      <%= form_for(@category, :html => {class: "translucent-form-overlay", role: "form"}) do |f| %>
+        <div class="floated-label-wrapper">
+          <%= f.label :name %>
+          <%= f.text_field :name, placeholder: "category name" %>  
+        </div>
+          <div class="small-8 columns">
+            <%= f.submit  class: "button" %>
+          </div>
+    <% end %>
+      <div class="small-12 columns">
+      [ <%= link_to "Cancel request and return to articles listing", articles_path %> ]
+      </div>
+  </div>
+</div>

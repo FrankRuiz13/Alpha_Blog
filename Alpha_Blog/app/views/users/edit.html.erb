@@ -1,13 +1,13 @@
 <h1 align="center" style="font-family: Oswald">Edit your account</h1>
 <% if @user.errors.any? %>
   <div class="row">
-    <div class="small-8 column">
+    <div class="large-11 columns">
       <div class="alert-box callout alert">
         <div class="fa fa-ban">
           <h3 ><%= pluralize(@user.errors.count, "error") %>
           prohibited this user from being saved:
           </h3>
-          <h6>The following errors prevented the user from being created</h6>
+          <h6>The following errors prevented the user from being updated</h6>
           <ul>
             <% @user.errors.full_messages.each do |msg| %>
               <li><%= msg %></li>
@@ -20,8 +20,8 @@
     </div>
 
 <div class="row">
-  <div class="small-8 columns">
-      <%= form_for(@user, :html => {class: "callout text-center", role: "form"}) do |f| %>
+  <div class="large-11 columns " align="center">
+      <%= form_for(@user, :html => {class: "translucent-form-overlay", role: "form"}) do |f| %>
         <div class="floated-label-wrapper">
           <%= f.label :username %>
           <%= f.text_field :username, placeholder: "username" %>  
@@ -34,7 +34,7 @@
           <%= f.label :password %>
           <%= f.text_field :password, placeholder: "password" %>
          </div> 
-          <div class="small-8 columns">
+          <div class="large-11 columns">
             <%= f.submit "Update your account", class: "button" %>
           </div>
     <% end %>

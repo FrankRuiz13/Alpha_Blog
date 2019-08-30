@@ -292,6 +292,29 @@ $alert-box-opacity: 0.2;
   }
 }
 
+.article-title {
+  color:  black;
+  font-weight: bold;
+  font-size: 1.5em;
+  }
+  
+  .article-body {
+  font-size: 1rem;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+  .article-actions {
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed black;
+    text-decoration: none;
+  }
+  .meta-details {
+    border-top: 1px solid rgba( 0, 0, 0, 0.5);
+    margin: .5rem;
+  }
+
 /*footer*/
 
 .footer-container {

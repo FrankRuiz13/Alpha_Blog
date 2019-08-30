@@ -1,4 +1,4 @@
-<h1  style="font-family: Oswald">Signup for Alpha Blog</h1>
+<h1 align="center" style="font-family: Oswald">Edit your account</h1>
 <% if @user.errors.any? %>
   <div class="row">
     <div class="small-8 column">
@@ -35,7 +35,7 @@
           <%= f.text_field :password, placeholder: "password" %>
          </div> 
           <div class="small-8 columns">
-            <%= f.submit "Sign up", class: "button" %>
+            <%= f.submit "Update your account", class: "button" %>
           </div>
     <% end %>
       <div class="small-12 columns">
@@ -43,4 +43,3 @@
       </div>
   </div>
 </div>
-
